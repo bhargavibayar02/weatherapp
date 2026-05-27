@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather code</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌤️ WEATHER CODE</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name" />
+    <button onclick="fetchWeather()">Get Weather</button>
+
+    <section id="current">
+      <h2>Current Weather</h2>
+      <p>Enter a city to see weather details.</p>
+    </section>
+
+    <section id="forecast">
+      <h2>Forecast</h2>
+      <canvas id="forecastChart" width="600" height="300"></canvas>
+    </section>
+
+    <section id="alerts">
+      <h2>Alerts</h2>
+      <p>No alerts yet.</p>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
